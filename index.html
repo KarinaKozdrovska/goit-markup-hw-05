@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css"> 
   </head>
   <body>
@@ -37,10 +42,10 @@
         </div>
     </header>
         <main>
-                <section class="main-cont section overlay">
+                <section class="main-cont section overlay-one">
                     <div class="container">
                         <h1 class="main-title">EFFECTIVE SOLUTIONS FOR <br />YOUR BUSINESS</h1>
-                        <button type="button" class="about-btn">Request our service</button>
+                        <button type="button" class="about-btn" data-modal-open>Request our service</button>
                     </div>
             </section>
             <section class="features section">
@@ -99,25 +104,46 @@
                     <h2 class="hero-title">What we do</h2>
                     <ul class="hero-list list">
                         <li class="hero-item">
+                          <div class="whatwedo-div">
+                            <a href="" class="whatwedo-link">
                             <img 
                             src="./images/image-1.jpg" 
                             alt="devices" 
                             width="370" 
                             height="294">
+                            <h3 class="whatwedo-sub-title">
+                              DESKTOP APPS
+                            </h3> 
+                          </a>  
+                          </div>
                         </li>
                         <li class="hero-item">
+                          <div class="whatwedo-div">
+                            <a href="" class="whatwedo-link">
                             <img 
                             src="./images/image-2.jpg" 
                             alt="devices" 
                             width="370" 
                             height="294">
+                            <h3 class="whatwedo-sub-title">
+                              Mobile
+                            </h3> 
+                          </a>  
+                          </div>
                         </li>
                         <li class="hero-item">
+                          <div class="whatwedo-div">
+                            <a href="" class="whatwedo-link">
                             <img 
                             src="./images/image-3.jpg" 
                             alt="devices" 
                             width="370" 
                             height="294">
+                            <h3 class="whatwedo-sub-title">
+                              DESIGN SOLUTIONS
+                            </h3> 
+                          </a>  
+                          </div>
                         </li>
                     </ul>
                 </div>
@@ -395,5 +421,19 @@
             </div>
         </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type= "button" class="modal-btn-close" data-modal-close>
+              <svg class="modal-slose-icon" width="18" height="18">
+                <use href="./images/svg/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="./js/modal.js"></script>
   </body>
 </html>
