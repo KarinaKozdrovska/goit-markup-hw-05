@@ -288,17 +288,6 @@ padding-bottom: 0;
     margin-bottom: 30px;
 }
 
-/* .item::before {
-    display: block;
-    content: "";
-    height: 120px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
 
 /* .item:nth-child(1)::before {
     background-image: url(../images3/antenna\ 1-2.jpg);
